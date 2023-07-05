@@ -149,6 +149,64 @@
     margin-bottom: 20px;
   }  
 
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    border: none;
+    margin-top: 2%;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: red;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
   footer {
     background-color: #FFCAD4;
     color: #9D8189;
