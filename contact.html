@@ -27,12 +27,12 @@
   </header>
 
   <main>
+    <h2 class="newslettertxt">Contact Page!</h2>
     <div class="form-container">
-      <h2 class="newslettertxt">Contact Page!</h2>
       <div class="about-section">
         <img src="/img/actuallyme.png" alt="Profile Image" class="profile-image">
         <div class="about-text">
-          <h2 id="aboutmetxt">About Me</h2>
+          <h3 id="aboutmetxt">About Me</h3>
           <p>
             Welcome to my website! My name is Emma Bright I am an apprentice at Google Switzerland. With almost a year
             of
@@ -45,7 +45,7 @@
         </div>
       </div>
 
-      <form method="POST" action="send_email.php">
+      <form method="POST" action="contact.php">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
 
@@ -59,7 +59,7 @@
           <option value="Feedback">Feedback</option>
         </select><br><br>
 
-        <label for="message">Message:</label><br>
+        <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
         <input type="submit" value="Submit">

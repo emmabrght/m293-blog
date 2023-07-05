@@ -18,12 +18,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Configure SMTP settings
         $mail->isSMTP();
-        $mail->Host = '71cc8fac-9df3-4ce7-b2c6-328ed68c2255@mailslurp.world';
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'em';
-        $mail->Password = '';
+        $mail->Username = 'emy.spammacc@gmail.com';
+        $mail->Password = 'gmfulmynwlyqqpis';
         $mail->SMTPSecure = 'tls';
-        $mail->Port = 25;
+        $mail->Port = 587;
 
         // Set sender and recipient
         $mail->setFrom($email, $name);
