@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('./fonts/Quicksand-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  p,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    color: #C997A0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f6efeb;
+    color: #333;
+  }
+  
+  /*Header*/
+  
+  header {
+    background-color: #FFCAD4;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    margin-right: 10px;
+    padding: 10px 20px;
+    color: #9D8189;
+    font-size: xx-large;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .title:hover {
+    color: #C997A0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #C997A0;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  #first{
+    margin-right: 30px;
+  }
+
+  #aboutmetxt{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #9D8189;
+  }
+
+  .newslettertxt {
+    color: #9D8189;
+    text-align: center;
+  }
+
+  .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .profile-image {
+    padding: 3%;
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .about-text {
+    width: 70%; /* Adjust the width as needed */
+  }
+  
+  .about-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }  
+
+  footer {
+    background-color: #FFCAD4;
+    color: #9D8189;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }

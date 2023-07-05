@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="title">Ems Library</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Blog</a>
+          <div class="dropdown-content">
+            <a href="books.html">Latest Books</a>
+            <a href="favs.html">Ems Favorites</a>
+          </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <h2 class="newslettertxt">Contact Page!</h2>
+      <div class="about-section">
+        <img src="/img/actuallyme.png" alt="Profile Image" class="profile-image">
+        <div class="about-text">
+          <h2 id="aboutmetxt">About Me</h2>
+          <p>
+            Welcome to my website! My name is Emma Bright I am an apprentice at Google Switzerland. With almost a year
+            of
+            experience, I strive to complete this TBZ Modul.
+            Through this website, I aim to prove I have a basic understanding of HTML.
+          </p>
+          <p>
+            Email: emma.bright@noseryoung.com
+          </p>
+        </div>
+      </div>
+      <form action="contact.php" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Emma Bright. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

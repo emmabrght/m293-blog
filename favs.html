@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="title">Ems Library</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Blog</a>
+          <div class="dropdown-content">
+            <a href="books.html">Latest Books</a>
+            <a href="favs.html">Ems Favorites</a>
+          </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 id="welcometxt">The Library</h2>
+
+    <div class="button-container">
+      <button id="first" class="custom-button" onclick="location.href='favs.html'">
+        <h2 class="button-title">Ems Favorites</h2>
+      </button>
+      <button class="custom-button" onclick="location.href='books.html'">
+        <h2 class="button-title">Latest Books</h2>
+      </button>
+    </div>
+
+    <section>
+      <div class="blog-grid">
+        <div class="blog-post">
+          <h3>Scythe</h3>
+          <p>Neal Shusterman</p>
+          <a href="./Books/Sythe.html" class="read-more">Read More</a>
+        </div>
+        <div class="blog-post">
+          <h3>Thunderhead</h3>
+          <p>Neal Shusterman</p>
+          <a href="/Books/Thunderhead.html" class="read-more">Read More</a>
+        </div>
+        <div class="blog-post">
+          <h3>The Toll</h3>
+          <p>Neal Shusterman</p>
+          <a href="/Books/TheToll.html" class="read-more">Read More</a>
+        </div>
+        <div class="blog-post">
+          <h3>Omniscent readers viewpoint</h3>
+          <p>Singshong</p>
+          <a href="/Books/orv.html" class="read-more">Read More</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Emma Bright. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

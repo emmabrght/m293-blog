@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="title">Ems Library</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Blog</a>
+                    <div class="dropdown-content">
+                        <a href="books.html">Latest Books</a>
+                        <a href="favs.html">Ems Favorites</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="welcometxt">Welcome to my blog!</h2>
+
+        <div class="blog-panels">
+            <button id="first" class="blog-panel" onclick="location.href='favs.html'">
+                <h2 class="panel-title">Ems Favorites</h2>
+                <p class="panel-description">Discover my all time favorite books</p>
+                <span class="panel-button">Explore</span>
+            </button>
+            <button class="blog-panel" onclick="location.href='books.html'">
+                <h2 class="panel-title">Lastest Books</h2>
+                <p class="panel-description">Check out the newest books I've read</p>
+                <span class="panel-button">Explore</span>
+            </button>
+        </div>
+
+        <section>
+            <h2 class="latest_posts">Latest Posts</h2>
+            <div class="blog-grid">
+                <div class="blog-post">
+                    <h3>meowwwwww</h3>
+                    <p>meowwwwww</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="blog-post">
+                    <h3>miau</h3>
+                    <p>miau</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <div class="form-container">
+            <h2 class="newslettertxt">Newsletter Sign-up!</h2>
+            <p class="newsletterbody">Enjoy my posts? Want to see more? <br>
+                Sign up for my newsletter here and be notified whenever I post!
+            </p>
+            <?php
+          if ($_SERVER["REQUEST_METHOD"] == "POST") {
+              $name = $_POST["name"];
+              $email = $_POST["email"];
+      
+              // Validate input
+              if (empty($name) || empty($email)) {
+                  echo "Please fill in all the fields.";
+              } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                  echo "Invalid email format.";
+              } else {
+                  // Prepare the email content
+                  $to = "emy.spammacc@gmail.com";
+                  $subject = "New Newsletter Subscriber";
+                  $message = "Name: $name\nEmail: $email";
+      
+                  // Send the email
+                  $headers = "From: $email";
+                  if (mail($to, $subject, $message, $headers)) {
+                      echo "Thank you for signing up!";
+                  } else {
+                      echo "Sorry, there was an error while processing your request. Please try again later.";
+                  }
+              }
+          }
+          ?>
+            <form method="POST" action="<?php echo $_SERVER[" PHP_SELF"]; ?>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <input type="submit" value="Sign Up">
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Emma Bright. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
