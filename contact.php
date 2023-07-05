@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 587;
 
         $mail->setFrom($email, $name);
-        $mail->addAddress('YOUR_EMAIL_ADDRESS');
+        $mail->addAddress('emmabrooklynbright@gmail.com');
 
         $mail->isHTML(false);
         $mail->Subject = 'Contact Form Submission: ' . $topic;
