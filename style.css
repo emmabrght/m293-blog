@@ -167,23 +167,23 @@ h3 {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
-  flex-wrap: wrap; /* Allow panels to wrap to the next line */
+  flex-wrap: wrap;
 }
 
 .blog-panel {
   width: 40%;
-  height: auto; /* Remove fixed height */
+  height: auto;
   background-color: #FFCAD4;
   border-radius: 5px;
   border-color: #9D8189;
   overflow: hidden;
   transition: background-color 0.3s ease;
   cursor: pointer;
-  margin: 10px; /* Add margin to separate panels */
+  margin: 10px;
 }
 
 #first {
-  margin-right: 0; /* Remove right margin for the first panel */
+  margin-right: 0;
 }
 
 #welcometxt {
