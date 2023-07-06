@@ -267,6 +267,10 @@ footer {
 }
 
 /*Book details*/  
+
+#book-title {
+  text-align: center;
+}
   
 .blog-post-detailed {
   margin: 2% 4% 4%;
