@@ -135,22 +135,24 @@
   }
   
   .about-text {
-    width: 70%; /* Adjust the width as needed */
+    width: 70%;
   }
   
   .about-text h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    max-width: fit-content;
   }
   
   .about-text p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
+    max-width: fit-content;
   }  
 
-form {
-    max-width: 500px;
+.form-container {
+    max-width: 100%;
     margin: 0 auto;
 }
 
