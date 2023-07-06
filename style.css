@@ -32,7 +32,6 @@ header {
 }
 
 .title {
-  margin-right: 10px;
   padding: 10px 20px;
   color: #9D8189;
   font-size: xx-large;
@@ -49,10 +48,11 @@ header {
 nav ul {
   list-style: none;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-  display: inline;
   margin: 0 10px;
 }
 
@@ -87,6 +87,21 @@ nav ul li a {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .dropdown-content {
+    left: 0;
+    transform: none;
+  }
 }
 
 main {
@@ -151,36 +166,30 @@ h3 {
 .blog-panels {
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;  
+  padding-bottom: 10px;
+  flex-wrap: wrap; /* Allow panels to wrap to the next line */
 }
 
 .blog-panel {
   width: 40%;
-  height: 150%;
+  height: auto; /* Remove fixed height */
   background-color: #FFCAD4;
   border-radius: 5px;
   border-color: #9D8189;
   overflow: hidden;
   transition: background-color 0.3s ease;
   cursor: pointer;
+  margin: 10px; /* Add margin to separate panels */
 }
 
-#first{
-  margin-right: 30px;
+#first {
+  margin-right: 0; /* Remove right margin for the first panel */
 }
-#welcometxt{
+
+#welcometxt {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-#book-title{
-  text-align: center;
-  padding-top: 10px;
-}
-
-.blog-panel:hover {
-  background-color: #f6ccd6;  
 }
 
 .panel-title {
@@ -210,6 +219,21 @@ h3 {
   text-decoration: none;
   border: none;
   border-radius: 0 0 5px 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-panel {
+    width: 90%; 
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 20px; 
+  }
+
+  .blog-post {
+    padding: 20px;
+  }
 }
 
 .latest_posts {
@@ -263,7 +287,7 @@ footer {
   height: auto;
 }
 
-.book-details{
+.book-details {
   padding-top: 1%;
   padding-bottom: 4%;
 }
@@ -283,6 +307,18 @@ footer {
   text-decoration: none;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  .post-grid {
+    flex-direction: column;
+  }
+
+  .book-image {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
 
 /*Blog abo*/
 
